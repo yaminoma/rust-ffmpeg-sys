@@ -1,6 +1,6 @@
 [package]
 name    = "ffmpeg-sys"
-version = "3.4.1"
+version = "3.5.0"
 build   = "build.rs"
 links   = "ffmpeg"
 
@@ -12,14 +12,14 @@ repository  = "https://github.com/meh/rust-ffmpeg-sys"
 keywords    = ["audio", "video"]
 
 [dependencies]
-libc = "0.2"
+libc = ">=0.2"
 
 [build-dependencies]
-num_cpus = "1.0"
-cc = "1.0"
-pkg-config = "0.3"
-bindgen    = "0.32"
-regex      = "0.2"
+num_cpus = ">=1.0"
+cc = ">=1.0"
+pkg-config = ">=0.3"
+bindgen    = ">=0.32"
+regex      = ">=0.2"
 
 [features]
 default  = ["avcodec", "avdevice", "avfilter", "avformat", "avresample", "swresample", "swscale"]
